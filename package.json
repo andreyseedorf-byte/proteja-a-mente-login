@@ -1,0 +1,29 @@
+{
+  "name": "proteja-a-mente-auth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Servidor de autenticação do projeto Proteja a Mente",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-mysql-session": "^3.0.3",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.19.0",
+    "helmet": "^8.1.0",
+    "mysql2": "^3.24.6"
+  },
+  "overrides": {
+    "express-mysql-session": {
+      "mysql2": "3.24.6"
+    }
+  }
+}
